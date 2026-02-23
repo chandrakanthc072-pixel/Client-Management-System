@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "seed": "node seed.js",
+    "create-admin": "node create-admin.js",
+    "change-admin": "node change-admin-credentials.js"
   },
   "keywords": [],
   "author": "",

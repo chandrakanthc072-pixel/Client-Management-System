@@ -20,9 +20,11 @@ mongoose.connect(process.env.MONGO_URI)
 // Routes
 const authRoutes = require('./routes/auth');
 const leadRoutes = require('./routes/leads');
+const clientRoutes = require('./routes/clients');
 
 app.use('/api/auth', authRoutes);
 app.use('/api/leads', leadRoutes);
+app.use('/api/clients', clientRoutes);
 
 app.get('/', (req, res) => {
     res.send('CRM Backend is Running');
